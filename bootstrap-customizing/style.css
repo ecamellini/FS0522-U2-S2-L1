@@ -1,0 +1,41 @@
+:root {
+  /*
+  Qua possiamo definire delle variabili CSS che saranno visibili
+  in tutta la nostra pagina web.
+  Bootstrap definisce delle variabili che poi usa, per esempio i vari
+  colori (primary, secondary, etc.)
+
+  Noi qua possiamo andarle a sovrascrivere.
+  */
+
+  --bs-primary: rgb(201, 34, 230);
+  --bs-primary-rgb: 201, 34, 230;
+
+  --bs-secondary: indigo;
+  --bs-secondary-rgb: 75, 0, 130;
+
+  /* Se io modifico le variabili, in automatico sto andando a modificare
+  tutte le classi che le usano.
+   */
+}
+
+.btn-secondary {
+  /* Le proprietà che scrivo qua dentro vanno a sovrascrivere le proprietà corrispondenti
+  definite nella classe di Bootstrap btn-secondary */
+
+  background-color: indigo;
+
+  /* Se faccio così, sovrascrivo solo il background color degli elementi con classe
+  btn-secondary */
+}
+
+/*  Possiamo sia sovrascrivere delle variabili di bootstrap, che sovrascrivere
+delle classi di bootstrap, che creare delle nostre classi in più da utilizzare.
+ */
+.bg-brand-primary {
+  background-color: rgb(201, 34, 230)
+}
+
+.text-brand-primary {
+  color: rgb(201, 34, 230)
+}
